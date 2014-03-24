@@ -3,8 +3,6 @@ module SamlIdp
   class IdpController < ActionController::Base
     include SamlIdp::Controller
 
-    unloadable
-
     protect_from_forgery
 
     before_filter :validate_saml_request
